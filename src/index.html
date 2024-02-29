@@ -1,0 +1,73 @@
+<!--
+File: index.html
+Author: Hosszú Tamás
+Copyright: 2024, Hosszú Tamás
+Group: Szoft I-1-N
+Date: 2024-02-29
+Github: https://github.com/hosszutamas/
+Licenc: GNU GPL
+-->
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Háromszög</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <header>
+                    <h1>Triangle</h1>
+                </header>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <nav>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="index.html"
+                            class="nav-link">Főoldal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html"
+                            class="nav-link">Névjegy</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <main>
+                    <h2>Háromszög területszámítás</h2>
+                    <div class="triangleform">
+                        <div class="input">
+                            <label for="base">Alap</label>
+                            <input type="text" id="base" required class="form-control">
+                        </div>
+                        <div class="input">
+                            <label for="height">Magasság</label>
+                            <input type="text" id="height" required class="form-control">
+                        </div>
+                        <div>
+                            <button id="calcButton"
+                            class="btn btn-primary mt-2">Számít</button>
+                        </div>
+                        <div class="input">
+                            <label for="area" 
+                            class="form-label">Terület</label>
+                            <input type="text" id="area" readonly class="form-control mb-5">
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
